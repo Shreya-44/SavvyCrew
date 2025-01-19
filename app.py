@@ -5,7 +5,7 @@ from pandasai import SmartDataframe
 from pandasai.llm.openai import OpenAI
 
 def initialize_smart_dataframe():
-    llm = OpenAI(api_token="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", temperature=0, model="gpt-3.5-turbo-0613")
+    llm = OpenAI(api_token="", temperature=0, model="gpt-3.5-turbo-0613")
     return SmartDataframe("CO2 Emissions_Canada.csv", config={"llm": llm})
 
 def get_chat_response(question, dataframe):
